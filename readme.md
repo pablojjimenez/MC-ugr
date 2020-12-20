@@ -1,3 +1,8 @@
+Referencias de otros años:
+- [Ref 1](https://github.com/Adri-Sanchez/UGR-MC)
+- [Ref 2](https://github.com/jdanielsv/MC_UGR)
+- [Ref 3, interesante homenaje](https://github.com/Mapachana/Practica-MC)
+-------------------------------------
 # Práctica 2. Expresiones Regulares con Flex++
 -------------------------------------
 Realizada por:
