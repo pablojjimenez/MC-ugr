@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "color.h"
 #include <string>
 using namespace std;
 
@@ -42,6 +43,10 @@ void mostrarInfo(string a);
 
 int main(int argc, char ** argv) {
 
+    cout << RED("inicio") << endl;
+    cout << _RED("Probando colores") << endl;
+    cout << _GRN("CORRECTO") << endl;
+
     fichero.open(argv[1]);
 
     yyFlexLexer flujo(&fichero, 0);
@@ -53,5 +58,5 @@ int main(int argc, char ** argv) {
 
 void mostrarInfo(string a) {
     cout << "HOla que ase" << endl;
-    cout << a << endl;
+    cout << FRED << a << RST << endl;
 }
