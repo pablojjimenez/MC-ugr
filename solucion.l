@@ -33,8 +33,7 @@ void mostrarInfo(string a);
 };
 
 \n {
-    //partidos.push_back(algo,resultado);
-    //algo == "";
+    cout << algo << endl;
 };
 
 %%
