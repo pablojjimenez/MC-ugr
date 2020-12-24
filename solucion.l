@@ -1,3 +1,4 @@
+%option noyywrap
 /********* DECLARACIONES **********/
 %{
 
@@ -7,17 +8,34 @@
 #include <string>
 using namespace std;
 
-ifstream fquiniela, frtado;
-vector< pair<string, char> > partidos;
-char * algo;
-mostrarInfo(char * a);
+//ifstream fquiniela, frtado;
+ifstream fichero;
+//vector< pair<string, char> > partidos;
+string algo;
+int i = 0;
+void mostrarInfo(string a);
 %}
 
 %%
 
-[A-za-z]+ {
-    algo = yyText();
-}
+[a-zA-z]    {
+        algo += yytext;
+};
+
+[" "] {
+    if (i == 0){
+        algo += "-";
+        i++;
+    }
+    else{
+        i = 0;
+    }
+};
+
+\n {
+    //partidos.push_back(algo,resultado);
+    //algo == "";
+};
 
 %%
 
@@ -25,21 +43,16 @@ mostrarInfo(char * a);
 
 int main(int argc, char ** argv) {
 
-    fquiniela.open(argv[1]);
-    if(fquiniela == 0) {
-        cerr << "ERROR\n";
-        return 1;
-    }
+    fichero.open(argv[1]);
 
-    yyFlexLexer flujo(&fquiniela, 0);
+    yyFlexLexer flujo(&fichero, 0);
     flujo.yylex();
-    mostrarInfo(algo);
 
-    cout << algo << endl;
-
+    cout << algo;
     return 0;
 }
 
-mostrarInfo(char * a) {
+void mostrarInfo(string a) {
+    cout << "HOla que ase" << endl;
     cout << a << endl;
 }
