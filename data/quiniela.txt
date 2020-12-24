@@ -1,0 +1,10 @@
+Elche-Osasuna   X
+Valencia-Sevilla    2
+Huesca-Levante  2
+RealSociedad-AtleticoMadrid 2
+Valladolid-Barcelona    2
+Villarreal-Athletic 2
+Getafe-Celta    2
+RealMadrid-Granada  X
+Alaves-Eibar    1
+Betis-Cadiz 1
