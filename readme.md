@@ -13,6 +13,14 @@ Dada una quiniela en un fichero txt y los resultados de los partidos en otro txt
 El orden en el que aparecen los partidos en `quiniela.txt` y en `partidos.txt` no tiene porque ser el mismo, el único requisito es que obviamente aparezcan los mismos partidos.
 
 ## 2. Explicación de cómo se ha abordado el problema.
+Para obtener la información de los ficheros de entrada y almacenarla en las estructuras de datos para luego operar con los datos hacemos uso de las siguientes expresiones regulares:
+`[-]` 
+`X` 
+`[a-zA-z]` 
+`[" "]` 
+`[0-9]`  
+`\t`
+`\n` 
 La información extraída de los ficheros de entrada se almacena en una estructura de datos de tipo: `vector< pair<string, char> >` que almacena los partidos que se enfrentan y el resultado de la apuesta (1: gana el primer equipo, 2: gana el segundo equipo, 3: empate). Esto se compara con la quiniela del usuario.
 Finalmente, el programa vuelca los siguientes datos: corrige la quiniela, muestra los equipos ganadores de los partidos y muestra tus aciertos.
 
