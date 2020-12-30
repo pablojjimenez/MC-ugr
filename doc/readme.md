@@ -1,4 +1,3 @@
--------------------------------------
 # Práctica 2. Expresiones Regulares con Flex++
 -------------------------------------
 Realizada por:
@@ -30,20 +29,31 @@ Para obtener la información de los ficheros de entrada y almacenarla en las est
 La información extraída de los ficheros de entrada se almacena en una estructura de datos de tipo: `vector< pair<string, char> >` que almacena los partidos que se enfrentan y el resultado de la apuesta (1: gana el primer equipo, 2: gana el segundo equipo, 3: empate). Esto se compara con la quiniela del usuario.
 Finalmente, el programa vuelca los siguientes datos: corrige la quiniela, muestra los equipos ganadores de los partidos y muestra tus aciertos.
 
+
 ## 3. Un ejemplo de ejecución.
-insertar foto
+Haciendo uso del makefile podemos hacer directamente make y se ejecuta el programa con los ficheros de datos de prueba, si se quisieran pasar otros focheros, podemos hacer uso de la regla compile con `make compile` y lanzar el programa nosotros manualmente recordando que el primero parámetro es el fichero con los resultados de los partidos y el segundo es el de la quiniela.
+Ejecucion con makefile
+![Ejecucion con makefile](img/1.png)
+
+Compilación con makefile
+![Compilación con makefile](img/2.png)
 
 ## 4. Ficheros creados en la práctica.
 ``` txt
 .
 ├── color.h
 ├── data
-│   ├── quiniela.txt
-│   └── resultados.txt
+│   ├── quiniela.txt
+│   └── resultados.txt
+├── doc
+│   ├── img
+│   │   ├── 2.png
+│   │   └── eje_programa.png
+│   └── readme.md
 ├── Makefile
-├── solucion.l
-└── Memoria.pdf
-1 directory, 6 files
+├── Memoria.pdf
+└── solucion.l
+3 directories, 8 files
 ```
 - El fichero `color.h` para dar dinamismo a las salidas por consola.
 - Los ficeros de `/data` son los ficheros de entrada del programa.
@@ -56,7 +66,15 @@ Se crean dos ficheros relacionados:
 
 ##  6. Compilar el programa
 Hemos hecho un `Makefile` para facilitar la labor de compilación y ejecución.
-solo es necesario hacer:
+Para compilar y ejecutar con los ficheros de prueba:
 ``` shell
 $ make
+```
+Para compilar y ejecutar manualmente:
+``` shell
+$ make compile
+```
+Para limpiar el directorio:
+``` shell
+$ make clean
 ```

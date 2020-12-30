@@ -122,6 +122,7 @@ int main(int argc, char ** argv) {
     cout << GRN("¡Se han leido los datos correctamente!") << endl << endl;
 
     mostrarEstadisticas();
+    
     return 0;
 }
 
