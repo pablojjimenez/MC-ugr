@@ -1,9 +1,9 @@
 # Práctica 2. Expresiones Regulares con Flex++
 -------------------------------------
 Realizada por:
-* Ángel Cabeza Martín
-* Manuel Jurado Trillo
-* Pablo Jiménez Jiménez
+* [Ángel Cabeza Martín](https://github.com/angelcabeza)
+* [Manuel Jurado Trillo](https://github.com/manujurado1)
+* [Pablo Jiménez Jiménez](https://github.com/pablojj1808)
 
 ## 1. Descripción del problema abordado. 
 El problema abordado consiste en un validador de quinielas de fútbol. 
