@@ -33,10 +33,10 @@ Finalmente, el programa vuelca los siguientes datos: corrige la quiniela, muestr
 ## 3. Un ejemplo de ejecución.
 Haciendo uso del makefile podemos hacer directamente make y se ejecuta el programa con los ficheros de datos de prueba, si se quisieran pasar otros focheros, podemos hacer uso de la regla compile con `make compile` y lanzar el programa nosotros manualmente recordando que el primero parámetro es el fichero con los resultados de los partidos y el segundo es el de la quiniela.
 Ejecucion con makefile
-![Ejecucion con makefile](img/1.png)
+![Ejecucion con makefile](doc/img/1.png)
 
 Compilación con makefile
-![Compilación con makefile](img/2.png)
+![Compilación con makefile](doc/img/2.png)
 
 ## 4. Ficheros creados en la práctica.
 ``` txt
